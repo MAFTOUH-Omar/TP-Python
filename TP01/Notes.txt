@@ -1,0 +1,37 @@
+email : bousalem.fpbm@gmail.com
+code : 
+
+
+Exercice 01 : 
+    Saisir le nombre d'éléments :5
+    Saisir l'elemnt nombre 1 : 2
+    Saisir l'elemnt nombre 2 : 9
+    Saisir l'elemnt nombre 3 : 7
+    Saisir l'elemnt nombre 4 : 3
+    Saisir l'elemnt nombre 5 : 39
+    Votre Liste est : [2, 9, 7, 3, 39]
+    La liste triée : [2, 3, 7, 9, 39]
+    La liste P : [2, 3, 7]
+    La liste L : [9, 39]
+    
+Exercice 02 :
+    Les mots Traiter : ['FPBM', 'supérieur', 'D3SI', 'I3DIA']
+    les mots en miniscule : ['fpbm', 'supérieur', 'd3si', 'i3dia']
+    les mots min len : [['supérieur', 'i3dia', 'fpbm', 'd3si']]
+    le dictionnaire frequence : {'fpbm': 1, 'supérieur': 1, 'd3si': 1, 'i3dia': 1}
+    Mots min Frequence : [['d3si', 'fpbm', 'i3dia', 'supérieur']]
+
+Exercice 03 :
+    Entrez un texte : Lorem ipsum dolor sit amet
+    {
+        'nombre_mots': 5,
+        'frequence_mots': {
+            'Lorem': 1, 
+            'ipsum': 1, 
+            'dolor': 1, 
+            'sit': 1, 
+            'amet': 1
+        },
+        'longueur_moyenne': 4.4,
+        'mot_le_plus_long': 'Lorem'
+    }
