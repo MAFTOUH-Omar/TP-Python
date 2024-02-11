@@ -1,49 +1,64 @@
-import math
-
-def nombre_chiffres ( x ) :
+def nombre_chiffres(x):
+    # Initialise un compteur de chiffres à 0
     cp = 0
-    while x != 0 :
+    # Boucle tant que x est différent de zéro
+    while x != 0:
         x //= 10
         cp += 1
+    # Retourne le nombre de chiffres dans x
     return cp
 
-def diviser_chiffre (nombre):
-    if nombre == 0:
-        return [0]
-    
-    resultats = []
-    while nombre > 0:
-        chiffre = nombre % 10
-        resultats.insert(0, chiffre)
-        nombre //= 10
-    
-    return resultats
-
-def calcul_nombre_amstrong ( x ) :
+def calcul_nombre_amstrong(x):
+    # Obtient le nombre de chiffres dans x en appelant la fonction nombre_chiffres
     nbrChiffre = nombre_chiffres(x)
-    chiffresEntier = diviser_chiffre( x )
+    # Initialise une liste pour stocker les chiffres de x
+    chiffresEntier = []
+    # Boucle tant que x est supérieur à zéro
+    while x > 0:
+        # Obtient le dernier chiffre de x
+        chiffre = x % 10
+        # Insère le chiffre au début de la liste des chiffres
+        chiffresEntier.insert(0, chiffre)
+        # Division entière de x par 10 pour enlever le dernier chiffre
+        x //= 10
+    # Initialise le nombre d'Armstrong à zéro
     nbrAmstrong = 0
-    for i in range(0 , len(chiffresEntier)) :
-        nbrAmstrong += math.pow(chiffresEntier[i] , nbrChiffre)
+    # Boucle sur chaque chiffre dans la liste des chiffres
+    for i in range(0, len(chiffresEntier)):
+        # Ajoute la puissance de chaque chiffre au nombre de chiffres de x
+        nbrAmstrong += chiffresEntier[i] ** nbrChiffre
+    # Retourne le nombre d'Armstrong calculé
     return int(nbrAmstrong)
 
-def est_un_nombre_amstrong( nombre ) :
+def est_un_nombre_amstrong(nombre):
+    # Calcule le nombre d'Armstrong pour le nombre donné
     nbrAmstrong = calcul_nombre_amstrong(nombre)
-    if nombre == nbrAmstrong :
+    # Vérifie si le nombre est égal à son nombre d'Armstrong
+    if nombre == nbrAmstrong:
         return True
-    else :
+    else:
         return False
 
-def afficher_nombres_amstrong ( List ) :
+def afficher_nombres_amstrong(List):
+    # Initialise une liste pour stocker les nombres d'Armstrong
     ListNbrAmstrong = []
-    for i in range(0 , len(List)) :
-        if est_un_nombre_amstrong(L[i]) :
-            ListNbrAmstrong.append(L[i])
+    # Parcourt chaque élément de la liste donnée
+    for i in range(0, len(List)):
+        # Vérifie si l'élément est un nombre d'Armstrong en appelant la fonction est_un_nombre_amstrong
+        if est_un_nombre_amstrong(List[i]):
+            # Ajoute l'élément à la liste des nombres d'Armstrong
+            ListNbrAmstrong.append(List[i])
+    # Retourne la liste des nombres d'Armstrong trouvés dans la liste donnée
     return ListNbrAmstrong
-    
 
-L = [ 153 , 1634 , 2 , 6 , 14 ]
-print(f"Liste qui continet nombre d\'amstrong : {afficher_nombres_amstrong(L)}")
-print(f"Nombre de chiffre : {nombre_chiffres(10)}")
-print(f"Nombre de Amstrong : {calcul_nombre_amstrong(153)}")
-print(f"Verifier si un nombre d\'amstrong : {est_un_nombre_amstrong(14)}")
+# Liste de nombres à vérifier
+L = [153, 1634, 2, 6, 14]
+
+# Affiche la liste des nombres d'Armstrong trouvés dans la liste L
+print(f"Liste contenant des nombres d'Armstrong : {afficher_nombres_amstrong(L)}")
+
+# Affiche le nombre d'Armstrong pour le nombre 23
+print(f"Nombre d'Armstrong pour 23 : {calcul_nombre_amstrong(23)}")
+
+# Vérifie si le nombre 14 est un nombre d'Armstrong
+print(f"Vérification si 14 est un nombre d'Armstrong : {est_un_nombre_amstrong(14)}")

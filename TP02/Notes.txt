@@ -1,0 +1,52 @@
+## convertire apartir une liset vers une chaine en utulisant joint
+    exemple :   
+        list = ['o' , 'm' , 'a' , 'r']
+        apartirListToStr = ''.join(list)
+
+## Exercice 04
+    1/ 
+        *   demander a user d'entrez nbr ligne , nbr colone du matriceA
+        *   demander a user d'entrez nbr ligne , nbr colone du matriceB
+        *   Si les dimention sont egale return True
+        *   return ligneA , coloneA , ligneB , coloneB
+    2/  
+        *   initisaliser listeVide = []
+        *   boucle jusqu'a r
+        *   ligne = [None] + c
+        *   listeVide.append(ligne)
+        *   return listeVide
+    3/
+        *   matrice = 2(R , C)
+        *   intialiser 2 boucle une pour les ligne et la deuxieme pour les colones
+        *   demander a user d'entrez les valeur du ligne sur la boucle du ligne
+        *   demander a user d'entrez les valeur du colone sur la boucle du colone
+        *   return matrice
+    4/ 
+        *   c = 2()
+
+
+
+## Calcule matrice :
+    A(N , M) == B(M , B)
+
+----------------------------------------------------------------------------------Exercice TP02
+## Exercice 01 :
+    Liste contenant des nombres d'Armstrong : [153, 1634, 2, 6]
+    Nombre d'Armstrong pour 23 : 13
+    Vérification si 23 est un nombre d'Armstrong : False
+## Exercice 02 : 
+    Le Larem Ipsum est simplement
+## Exercice 04 : 
+    Entrez le nombre de lignes de la matrice A : 2
+    Entrez le nombre de colonnes de la matrice A et le nombre de lignes de la matrice B : 1
+    Entrez le nombre de colonnes de la matrice B : 1
+    Pour la matrice A :
+    Entrez les éléments de la matrice :
+    Entrez l'élément [1,1] : 1
+    Entrez l'élément [2,1] : 2
+    Pour la matrice B :
+    Entrez les éléments de la matrice :
+    Entrez l'élément [1,1] : 1
+    Le produit matriciel de A et B est :
+    [1.0]
+    [2.0]
