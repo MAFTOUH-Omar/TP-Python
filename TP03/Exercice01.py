@@ -14,8 +14,8 @@ np.add(tab1 , 2)
 np.multiply(tab2 , 2)
 
 # Afficher la forme et la dimension des deux tableaux
-print(f"Forme du tab1 : {tab1} , dimension du tab1 : {tab1.ndim}") # tab 01
-print(f"Forme du tab2 : {tab2} , dimension du tab2 : {tab2.ndim}") # tab 02
+print(f"Forme du tab1 : {tab1.shape} , dimension du tab1 : {tab1.ndim}") # tab 01
+print(f"Forme du tab2 : {tab2.shape} , dimension du tab2 : {tab2.ndim}") # tab 02
 
 # Afficher le nombre des lignes et des colonnes de tab2
 print(f"Nombre du ligne du tab2 : {tab2.shape[0]} , Nombre du colone du tab2 : {tab2.shape[1]}")
@@ -35,7 +35,7 @@ print(f"Les indices des valeurs maximales de le long axe 1 : {np.argmax(tab2 , a
 print(f"Les indices des valeurs minimales de le long axe 1 : {np.argmin(tab2 , axis=1)}")
 
 """
-        Creation du tableau booléen sup_a_3 de même taille que tab1, où chaque élément est égal à
+    Creation du tableau booléen sup_a_3 de même taille que tab1, où chaque élément est égal à
     True si l’élément correspond dans tab1 est supérieur à 3, sinon la valeur est False
 """
 sup_a_3 = np.array(tab1 > 3 , ndmin=(tab1.ndim))
