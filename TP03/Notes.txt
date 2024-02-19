@@ -1,0 +1,10 @@
+# putty pour connecer a un serveur a distance
+# RedHat
+# CentOs
+# Fedora Linux
+## Distribution Linux
+
+
+-----------------Exercice01-----------------
+axis = 0 en bas
+axis = 1 en droit ->
