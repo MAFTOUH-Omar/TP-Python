@@ -18,11 +18,12 @@ print(f"Ecart Type du Y : {ecartTypeY}")
 # Calcul du coefficient de corrélation entre X et Y
 CoeCorrelationX = np.corrcoef(X , Y)
 print(f"le coefficient de correlation : \n{CoeCorrelationX}")
+# -1 < Correlation < 1
 
 """"
-    Un coefficient de corrélation proche de 1 indiquerait une corrélation positive, c'est-à-dire que lorsque les ventes mensuelles de X augmentent, les ventes mensuelles de Y ont tendance à augmenter également.
-    Un coefficient de corrélation proche de -1 indiquerait une corrélation négative, ce qui signifie que lorsque les ventes mensuelles de X augmentent, les ventes mensuelles de Y ont tendance à diminuer.
-    Un coefficient de corrélation proche de 0 indiquerait une faible corrélation linéaire entre les ventes mensuelles de X et de Y.
+    * Un coefficient de corrélation proche de 1 indiquerait une corrélation positive, c'est-à-dire que lorsque les ventes mensuelles de X augmentent, les ventes mensuelles de Y ont tendance à augmenter également.
+    * Un coefficient de corrélation proche de -1 indiquerait une corrélation négative, ce qui signifie que lorsque les ventes mensuelles de X augmentent, les ventes mensuelles de Y ont tendance à diminuer.
+    * Un coefficient de corrélation proche de 0 indiquerait une faible corrélation linéaire entre les ventes mensuelles de X et de Y.
 """
 
 # 4
