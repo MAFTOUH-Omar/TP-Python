@@ -1,0 +1,3 @@
+## tail() & head()
+
+## 13 interpretation du nom & prenom c'est tous
