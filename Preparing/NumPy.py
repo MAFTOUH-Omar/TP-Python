@@ -57,5 +57,29 @@ import numpy as np
 
 
 ################################## Where
-arr = np.array([1, 2, 3, 4, 5, 7])
-print(f"{np.searchsorted(arr , 6)}")
+# arr = np.array([1, 2, 3, 4, 5, 7])
+# print(f"{np.searchsorted(arr , 6)}")
+
+############# union1d & intersect1d
+# arr01 = np.array([1 , 2 , 3 , 4])
+# arr02 = np.array([1 , 5 , 3 , 6])
+# print(f"Union : {np.union1d(arr01 , arr02)}") # [1 2 3 4 5 6]
+# print(f"Intersect : {np.intersect1d(arr01 , arr02)}") # [1 3]
+# arr03 = np.concatenate((arr01 , arr02))
+# uniqueElement , indices = np.unique(arr03 , return_index=True) # return_inverse , return_count
+# print(f"Unique Elemenet on Arr03 : {uniqueElement}") # [1 2 3 4 5 6]
+# print(f"Index odfunique element on arr03 : {indices}") # [0 1 2 3 5 7]
+
+# tab = np.array([[1, 2, 3],
+#     [4, 2, 6],
+#     [7, 8, 9],
+#     [1, 2, 3]])
+
+# print(f"Unique elements Axis0 : {np.unique(tab , axis=0)}")
+# print(f"Unique elements Axis1 : {np.unique(tab , axis=0)}")
+
+########################### Random
+demo01 = np.random.randint(10 , 101 , size=(3))
+demo02 = np.random.rand(3)
+demo03 = np.random.choice([1 , 3 , 6 , 8 , 19] , size=3)
+demo04 = np.random.shuffle([1 , 3 , 6 , 8 , 19] , size=3) # melange
